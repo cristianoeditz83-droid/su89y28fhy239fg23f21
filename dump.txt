@@ -1,0 +1,1610 @@
+[SMBIOS Info]
+===============================================================================
+ Name : SMBIOS Revision                                 Style : BYTE
+ Data : 2.8
+
+ Name : DMI Table Storage Length                        Style : WORD
+ Data : 1757 bytes
+
+[Type 000] -- BIOS Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Ah
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0000h
+
+    Name  : BIOS Vendor                                 Style : STRING
+    Data  : "American Megatrends Inc."
+
+    Name  : BIOS Version                                Style : STRING
+    Data  : "10171"
+
+    Name  : BIOS Starting Add. Seg.                     Style : WORD
+    Data  : F000h
+
+    Name  : BIOS Release Date                           Style : STRING
+    Data  : "04/14/2019"
+
+    Name  : BIOS ROM Size                               Style : BYTE
+    Data  : FFh
+            -- 16384 KB
+
+    Name  : BIOS Characteristics                        Style : QWORD
+    Data  : 0000 0001 3F8B 9880h
+            -- Bit.07:PCI is Reserved
+            -- Bit.11:BIOS is Upgradeable(Flash)
+            -- Bit.12:BIOS shadowing is allowed
+            -- Bit.15:Boot from CD is supported
+            -- Bit.16:Selectable Boot is supported
+            -- Bit.17:BIOS ROM is socketed
+            -- Bit.19:EDD(Enhanced Disk Drive) Specification is supported
+            -- Bit.23:Int 13h - 5.25" / 1.2MB Floppy Services are supported
+            -- Bit.24:Int 13h - 3.5" / 720 KB Floppy Services are supported
+            -- Bit.25:Int 13h - 3.5" / 2.88 MB Floppy Services are supported
+            -- Bit.26:Int 5h, Print Screen Service is supported
+            -- Bit.27:Int 9h, 8042 Keyboard services are supported
+            -- Bit.28:Int 14h,Serial Services are supported
+            -- Bit.29:Int 17h, Printer Services are supported
+            -- Bit.32~47:Reserved for BIOS Vendor
+
+    Name  : BIOS Char. Extension                        Style : WORD
+    Data  : 0D03h
+            -- Bit.00:ACPI is supported
+            -- Bit.01:USB Legacy is supported
+            -- Bit.08:BIOS Boot Specification is supported
+            -- Bit.10:Enable Targeted Content Distribution
+            -- Bit.11:UEFI Specification is supported
+            -- Bit.13~15:Reserved
+
+    Name  : System BIOS Major Release                   Style : BYTE
+    Data  : 05h
+
+    Name  : System BIOS Minor Release                   Style : BYTE
+    Data  : 11h
+
+    Name  : Embedded Controller Firmware Major Release  Style : BYTE
+    Data  : FFh
+
+    Name  : Embedded Controller Firmware Minor Release  Style : BYTE
+    Data  : FFh
+
+    Name  : Extended BIOS ROM Size                      Style : WORD
+    Data  : 0010h
+            -- 16 MB
+
+[Type 001] -- System Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Bh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0001h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "ASUSTeK COMPUTER INC."
+
+    Name  : Product Name                                Style : STRING
+    Data  : "X580VD"
+
+    Name  : Version                                     Style : STRING
+    Data  : "1.0       "
+
+    Name  : Serial Number                               Style : STRING
+    Data  : ""
+
+    Name  : UUID                                        Style : 16 BYTEs
+    Data  : C8 D2 D5 18 BF 55 BF B2 51 95 F6 71 50 D6 07 01h
+
+    Name  : Wake-up Type                                Style : BYTE
+    Data  : 06h
+            -- Power Switch
+
+    Name  : SKUNumber                                   Style : STRING
+    Data  : " "
+
+    Name  : Family                                      Style : STRING
+    Data  : "VivoBook"
+
+[Type 002] -- Base Board/Module Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 0Fh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0002h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "ASUSTeK COMPUTER INC."
+
+    Name  : Product                                     Style : STRING
+    Data  : "X580VD"
+
+    Name  : Version                                     Style : STRING
+    Data  : "1.0       "
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "B6YV7999BX9718263"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : "ATN48293756104829375"
+
+    Name  : Feature Flags                               Style : BYTE
+    Data  : 09h
+            -- Bit.00:the board is a hosting board.
+            -- Bit.03:the board is replaceable.
+
+    Name  : Location in Chassis                         Style : STRING
+    Data  : "MIDDLE              "
+
+    Name  : Chassis Handle                              Style : WORD
+    Data  : 0003h
+
+    Name  : Board Type                                  Style : BYTE
+    Data  : 0Ah
+            -- Motherboard(includes processor, memory, and I/O)
+
+    Name  : Num. of Contained Object Handles            Style : BYTE
+    Data  : 00h
+
+[Type 003] -- System Enclosure or Chassis
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 16h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0003h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "ASUSTeK COMPUTER INC."
+
+    Name  : Type                                        Style : BYTE
+    Data  : 00h
+            -- Not defined
+
+    Name  : Version                                     Style : STRING
+    Data  : "1.0       "
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "KBI5DA42I645519"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : "No Asset Tag"
+
+    Name  : Bootup State                                Style : BYTE
+    Data  : 03h
+            -- Safe
+
+    Name  : Power Supply State                          Style : BYTE
+    Data  : 03h
+            -- Safe
+
+    Name  : Thermal State                               Style : BYTE
+    Data  : 03h
+            -- Safe
+
+    Name  : Security Status                             Style : BYTE
+    Data  : 03h
+            -- None
+
+    Name  : OEM-defined                                 Style : DWORD
+    Data  : 00000000h
+
+    Name  : Height                                      Style : BYTE
+    Data  : 00h
+
+    Name  : Number of Power Cords                       Style : BYTE
+    Data  : 06h
+
+    Name  : Contained Element Count                     Style : BYTE
+    Data  : 00h
+
+    Name  : Contained Element Record Length             Style : BYTE
+    Data  : 03h
+
+    Name  : Contained Elements                          Style : BYTEs
+    Data  : None
+
+    Name  : SKU Number                                  Style : STRING
+    Data  : "NA"
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0004h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE1"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 08h
+            -- 1x or x1
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 03h
+            -- Short Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0011h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0005h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE2"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 0Dh
+            -- 16x or x16
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 04h
+            -- Long Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0012h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0006h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE3"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 08h
+            -- 1x or x1
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 03h
+            -- Short Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0013h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0007h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE4_M2_1"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 0Ah
+            -- 4x or x4
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 03h
+            -- Short Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0014h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0008h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE5"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 08h
+            -- 1x or x1
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 03h
+            -- Short Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0015h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 009] -- System Slots
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 11h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0009h
+
+    Name  : Slot Designation                            Style : STRING
+    Data  : "PCIE6"
+
+    Name  : Slot Type                                   Style : BYTE
+    Data  : A5h
+            -- PCI Express
+
+    Name  : Slot Data Bus Width                         Style : BYTE
+    Data  : 08h
+            -- 1x or x1
+
+    Name  : Current Usage                               Style : BYTE
+    Data  : 04h
+            -- In use
+
+    Name  : Slot Length                                 Style : BYTE
+    Data  : 03h
+            -- Short Length
+
+    Name  : Slot ID                                     Style : WORD
+    Data  : 0016h
+
+    Name  : Slot Characteristics 1                      Style : BYTE
+    Data  : 0Ch
+            -- Bit.2:Provides 3.3 Volts
+            -- Bit.3:Slot's opening is shared with another slot.
+
+    Name  : Slot Characteristics 2                      Style : BYTE
+    Data  : 01h
+            -- Bit.0:PCI slot supports PME# signal
+
+    Name  : Segment Group Number                        Style : WORD
+    Data  : 0000h
+
+    Name  : Bus Number                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device/Function Number                      Style : BYTE
+    Data  : 00h
+            -- Device Number:00
+            -- Function Number:00
+
+[Type 011] -- OEM Strings
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 05h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Ah
+
+    Name  : Count                                       Style : BYTE
+    Data  : 01h
+
+    String#1  : Default string
+[Type 032] -- System Boot Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 14h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Bh
+
+    Name  : Reserved                                    Style : 6 BYTEs
+    Data  : 00 00 00 00 00 00h
+
+    Name  : Boot Status                                 Style : BYTEs
+    Data  : 00 00 00 00 00 00 00 00 00 00 
+            -- No errors detected
+
+[Type 040] -- Additional Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 0Eh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Ch
+
+    Name  : Number of Additional Information entries(n) Style : ENTRYS
+    Data  : 01h
+
+    Name  : Entry Length                                Style : BYTE
+    Data  : 09h
+
+    Name  : Referenced Handle                           Style : WORD
+    Data  : 00A1h
+
+    Name  : Referenced Offset                           Style : BYTE
+    Data  : 01h
+
+    Name  : String                                      Style : STRING
+    Data  : "MORDOR"
+
+    Name  : Value                                       Style : VARIES
+    Data  : 00h 00h 00h 00h 
+
+[Type 044] -- Unknown Type
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 09h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Dh
+
+    Name  : Data                                        Style : BYTEs
+    Data  : FF FF 01 01 00 
+
+[Type 018] -- 32-bit Memory Error Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Eh
+
+    Name  : Error Type                                  Style : BYTE
+    Data  : 03h
+            -- OK
+
+    Name  : Error Granularity                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Error Operation                             Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Vendor Syndrome                             Style : DWORD
+    Data  : 00000000h
+
+    Name  : Mem. Array Err. Add.                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Device Error Address                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Error Resolution                            Style : DWORD
+    Data  : 80000000h
+
+[Type 016] -- Physical Memory Array
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 000Fh
+
+    Name  : Location                                    Style : BYTE
+    Data  : 03h
+            -- System board or motherboard
+
+    Name  : Use                                         Style : BYTE
+    Data  : 03h
+            -- System memory
+
+    Name  : Memory Error Correction                     Style : BYTE
+    Data  : 03h
+            -- None
+
+    Name  : Maximum Capacity                            Style : DWORD
+    Data  : 08000000h
+
+    Name  : Mem. Err. Info. Handle                      Style : WORD
+    Data  : 000Eh
+
+    Name  : Number of Memory Devices                    Style : WORD
+    Data  : 0004h
+
+    Name  : Extended Maximum Capacity                   Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+[Type 019] -- Memory Array Mapped Address
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Fh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0010h
+
+    Name  : Starting Address                            Style : DWORD
+    Data  : 00000000h
+
+    Name  : End Address                                 Style : DWORD
+    Data  : 00FFFFFFh
+
+    Name  : Mem. Array Handle                           Style : WORD
+    Data  : 000Fh
+
+    Name  : Partition Width                             Style : BYTE
+    Data  : 02h
+
+    Name  : Extended Starting Address                   Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Extended Ending Address                     Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+[Type 007] -- Cache Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Bh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0011h
+
+    Name  : Socket Designation                          Style : STRING
+    Data  : "L1 - Cache"
+
+    Name  : Cache Configuration                         Style : WORD
+    Data  : 0180h
+            -- Cache Level - 1
+            -- Cache Socketed:Not Socketed
+            -- Location, relative to the CPU module:Internal
+            -- At boot time:Enable
+            -- Operational Mode:Write Back
+
+    Name  : Maximum Cache Size                          Style : WORD
+    Data  : 0180h
+            -- 1K granularity [Max Size:384]
+
+    Name  : Installed Size                              Style : WORD
+    Data  : 0180h
+            -- 1K granularity [Max Size:384]
+
+    Name  : Supported SRAM Type                         Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Current SRAM Type                           Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Cache Speed                                 Style : BYTE
+    Data  : 01h
+
+    Name  : Error Correction Type                       Style : BYTE
+    Data  : 06h
+            -- Multi-Bit.ECC
+
+    Name  : System Cache Type                           Style : BYTE
+    Data  : 05h
+            -- Unified
+
+    Name  : Associativity                               Style : BYTE
+    Data  : 07h
+            -- 8-way Set-Asociative
+
+    Name  : Maximum Cache Size 2                        Style : DWORD
+    Data  : 00000180h
+            -- 1K granularity [Max Size:384]
+
+    Name  : Installed Size 2                            Style : DWORD
+    Data  : 00000180h
+            -- 1K granularity [Max Size:384]
+
+[Type 007] -- Cache Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Bh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0012h
+
+    Name  : Socket Designation                          Style : STRING
+    Data  : "L2 - Cache"
+
+    Name  : Cache Configuration                         Style : WORD
+    Data  : 0181h
+            -- Cache Level - 2
+            -- Cache Socketed:Not Socketed
+            -- Location, relative to the CPU module:Internal
+            -- At boot time:Enable
+            -- Operational Mode:Write Back
+
+    Name  : Maximum Cache Size                          Style : WORD
+    Data  : 0C00h
+            -- 1K granularity [Max Size:3072]
+
+    Name  : Installed Size                              Style : WORD
+    Data  : 0C00h
+            -- 1K granularity [Max Size:3072]
+
+    Name  : Supported SRAM Type                         Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Current SRAM Type                           Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Cache Speed                                 Style : BYTE
+    Data  : 01h
+
+    Name  : Error Correction Type                       Style : BYTE
+    Data  : 06h
+            -- Multi-Bit.ECC
+
+    Name  : System Cache Type                           Style : BYTE
+    Data  : 05h
+            -- Unified
+
+    Name  : Associativity                               Style : BYTE
+    Data  : 07h
+            -- 8-way Set-Asociative
+
+    Name  : Maximum Cache Size 2                        Style : DWORD
+    Data  : 00000C00h
+            -- 1K granularity [Max Size:3072]
+
+    Name  : Installed Size 2                            Style : DWORD
+    Data  : 00000C00h
+            -- 1K granularity [Max Size:3072]
+
+[Type 007] -- Cache Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 1Bh
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0013h
+
+    Name  : Socket Designation                          Style : STRING
+    Data  : "L3 - Cache"
+
+    Name  : Cache Configuration                         Style : WORD
+    Data  : 0182h
+            -- Cache Level - 3
+            -- Cache Socketed:Not Socketed
+            -- Location, relative to the CPU module:Internal
+            -- At boot time:Enable
+            -- Operational Mode:Write Back
+
+    Name  : Maximum Cache Size                          Style : WORD
+    Data  : 4000h
+            -- 1K granularity [Max Size:16384]
+
+    Name  : Installed Size                              Style : WORD
+    Data  : 4000h
+            -- 1K granularity [Max Size:16384]
+
+    Name  : Supported SRAM Type                         Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Current SRAM Type                           Style : WORD
+    Data  : 0010h
+            -- Bit.04:Pipeline Burst
+
+    Name  : Cache Speed                                 Style : BYTE
+    Data  : 01h
+
+    Name  : Error Correction Type                       Style : BYTE
+    Data  : 06h
+            -- Multi-Bit.ECC
+
+    Name  : System Cache Type                           Style : BYTE
+    Data  : 05h
+            -- Unified
+
+    Name  : Associativity                               Style : BYTE
+    Data  : 08h
+            -- 16-way Set-Asociative
+
+    Name  : Maximum Cache Size 2                        Style : DWORD
+    Data  : 00004000h
+            -- 1K granularity [Max Size:16384]
+
+    Name  : Installed Size 2                            Style : DWORD
+    Data  : 00004000h
+            -- 1K granularity [Max Size:16384]
+
+[Type 004] -- Processor Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 30h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0014h
+
+    Name  : Socket Designation                          Style : STRING
+    Data  : "AM4"
+
+    Name  : Processor Type                              Style : BYTE
+    Data  : 03h
+            -- Central Processor
+
+    Name  : Processor Family                            Style : BYTE
+    Data  : 6Bh
+            -- AMD Zen Processor Family
+
+    Name  : Processor Manufacturer                      Style : STRING
+    Data  : "Advanced Micro Devices, Inc."
+
+    Name  : Processor ID                                Style : DWORD
+    Data  : 00A50F00h
+
+    Name  : Processor Features                          Style : DWORD
+    Data  : 178BFBFFh
+
+    Name  : Processor Version                           Style : STRING
+    Data  : "AMD Ryzen 5 5600G with Radeon Graphics         "
+
+    Name  : Voltage                                     Style : BYTE
+    Data  : 8Eh
+            -- Bit.07:Set to 1, the remaining seven bits of the field are set  
+		      to contain the processor's current voltage times 10.
+            -- Current voltage = 1.4 V
+
+    Name  : External Clock                              Style : WORD
+    Data  : 0064h
+            -- 100 MHz
+
+    Name  : Max Speed                                   Style : WORD
+    Data  : 1162h
+            -- 4450 MHz
+
+    Name  : Current Speed                               Style : WORD
+    Data  : 0F3Ch
+            -- 3900 MHz
+
+    Name  : Status                                      Style : BYTE
+    Data  : 41h
+            -- Bit.06:CPU Socket Populated
+            -- CPU Enabled
+
+    Name  : Processor Upgrade                           Style : BYTE
+    Data  : 31h
+            -- Socket AM4
+
+    Name  : L1 Cache Handle                             Style : WORD
+    Data  : 0011h
+
+    Name  : L2 Cache Handle                             Style : WORD
+    Data  : 0012h
+
+    Name  : L3 Cache Handle                             Style : WORD
+    Data  : 0013h
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "VXA9JJ35C096939"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : "Default string"
+
+    Name  : Part Number                                 Style : STRING
+    Data  : "Default string"
+
+    Name  : Core Count                                  Style : BYTE
+    Data  : 06h
+
+    Name  : Core Enabled                                Style : BYTE
+    Data  : 06h
+
+    Name  : Thread Count                                Style : BYTE
+    Data  : 0Ch
+
+    Name  : Processor Characteristics                   Style : WORD
+    Data  : 00FCh
+            -- Bit.02:64-Bit.Capable
+            -- Bit.03:Multi-Core
+            -- Bit.04:Hardware Thread
+            -- Bit.05:Execute Protection
+            -- Bit.06:Enhanced Virtualization
+            -- Bit.07:Power/Performance Control
+            -- Bit.08~15:Reserved
+
+    Name  : Processor Family 2                          Style : WORD
+    Data  : 006Bh
+            -- AMD Zen Processor Family
+
+    Name  : Core Count 2                                Style : WORD
+    Data  : 0006h
+
+    Name  : Core Enabled 2                              Style : WORD
+    Data  : 0006h
+
+    Name  : Thread Count 2                              Style : WORD
+    Data  : 000Ch
+
+[Type 018] -- 32-bit Memory Error Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0015h
+
+    Name  : Error Type                                  Style : BYTE
+    Data  : 03h
+            -- OK
+
+    Name  : Error Granularity                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Error Operation                             Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Vendor Syndrome                             Style : DWORD
+    Data  : 00000000h
+
+    Name  : Mem. Array Err. Add.                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Device Error Address                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Error Resolution                            Style : DWORD
+    Data  : 80000000h
+
+[Type 017] -- Memory Device
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 5Ch
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0016h
+
+    Name  : Phys. Mem. Array Handle                     Style : WORD
+    Data  : 000Fh
+
+    Name  : Mem. Err. Info. Handle                      Style : WORD
+    Data  : 0015h
+
+    Name  : Total Width                                 Style : WORD
+    Data  : 0040h
+
+    Name  : Data Width                                  Style : WORD
+    Data  : 0040h
+
+    Name  : Size                                        Style : WORD
+    Data  : 2000h
+
+    Name  : Form Factor                                 Style : BYTE
+    Data  : 09h
+            -- DIMM
+
+    Name  : Device Set                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device Locator                              Style : STRING
+    Data  : "DIMM 0"
+
+    Name  : Bank Locator                                Style : STRING
+    Data  : "P0 CHANNEL A"
+
+    Name  : Memory Type                                 Style : BYTE
+    Data  : 1Ah
+            -- DDR4
+
+    Name  : Type Detail                                 Style : WORD
+    Data  : 4080h
+            -- Bit.07:Synchronous
+            -- Bit.14:Unbuffered (Unregistered)
+
+    Name  : Speed                                       Style : WORD
+    Data  : 0855h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "Unknown"
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "09759840"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : NULL
+
+    Name  : Part Number                                 Style : STRING
+    Data  : "CMK16GX4M2B3200C16  "
+
+    Name  : Attributes                                  Style : BYTE
+    Data  : 01h
+
+    Name  : Extended Size                               Style : DWORD
+    Data  : 00000000h
+
+    Name  : Configured Memory Speed                     Style : WORD
+    Data  : 0855h
+
+    Name  : Minimum voltage                             Style : WORD
+    Data  : 04B0h
+
+    Name  : Maximum voltage                             Style : WORD
+    Data  : 04B0h
+
+    Name  : Configured voltage                          Style : WORD
+    Data  : 04B0h
+
+    Name  : Memory Technology                           Style : BYTE
+    Data  : 03h
+            -- DRAM
+
+    Name  : Memory Operating Mode Capability            Style : WORD
+    Data  : 0008h
+            -- Bit.03:Volatile memory
+
+    Name  : Firmware Version                            Style : BYTE
+    Data  : 06h
+
+    Name  : Module Manufacturer ID                      Style : WORD
+    Data  : 9E02h
+
+    Name  : Module Product ID                           Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Manufacturer ID Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Product ID      Style : WORD
+    Data  : 0000h
+
+    Name  : Non-volatile Size                           Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Volatile Size                               Style : QWORD
+    Data  : 0000 0002 0000 0000h
+
+    Name  : Cache Size                                  Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Logical Size                                Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Unknown Field                               Style : BYTEs
+    Data  : 00000000
+[Type 020] -- Memory Device Mapped Address
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 23h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0017h
+
+    Name  : Starting Address                            Style : DWORD
+    Data  : 00000000h
+
+    Name  : End Address                                 Style : DWORD
+    Data  : 00FFFFFFh
+
+    Name  : Memory Device Handle                        Style : WORD
+    Data  : 0016h
+
+    Name  : Mem. Map. Add. Handle                       Style : WORD
+    Data  : 0010h
+
+    Name  : Partition Row Position                      Style : BYTE
+    Data  : FFh
+
+    Name  : Interleave Position                         Style : BYTE
+    Data  : FFh
+
+    Name  : Interleaved Data Depth                      Style : BYTE
+    Data  : FFh
+
+    Name  : Extended Starting Address                   Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Extended Ending Address                     Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+[Type 018] -- 32-bit Memory Error Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0018h
+
+    Name  : Error Type                                  Style : BYTE
+    Data  : 03h
+            -- OK
+
+    Name  : Error Granularity                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Error Operation                             Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Vendor Syndrome                             Style : DWORD
+    Data  : 00000000h
+
+    Name  : Mem. Array Err. Add.                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Device Error Address                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Error Resolution                            Style : DWORD
+    Data  : 80000000h
+
+[Type 017] -- Memory Device
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 5Ch
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 0019h
+
+    Name  : Phys. Mem. Array Handle                     Style : WORD
+    Data  : 000Fh
+
+    Name  : Mem. Err. Info. Handle                      Style : WORD
+    Data  : 0018h
+
+    Name  : Total Width                                 Style : WORD
+    Data  : FFFFh
+
+    Name  : Data Width                                  Style : WORD
+    Data  : FFFFh
+
+    Name  : Size                                        Style : WORD
+    Data  : 0000h
+
+    Name  : Form Factor                                 Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Device Set                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device Locator                              Style : STRING
+    Data  : "DIMM 1"
+
+    Name  : Bank Locator                                Style : STRING
+    Data  : "P0 CHANNEL A"
+
+    Name  : Memory Type                                 Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Type Detail                                 Style : WORD
+    Data  : 0004h
+            -- Bit.02:Unknown
+
+    Name  : Speed                                       Style : WORD
+    Data  : 0000h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "Unknown"
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "Yzlhabb"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : NULL
+
+    Name  : Part Number                                 Style : STRING
+    Data  : "Unknown"
+
+    Name  : Attributes                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Extended Size                               Style : DWORD
+    Data  : 00000000h
+
+    Name  : Configured Memory Speed                     Style : WORD
+    Data  : 0000h
+
+    Name  : Minimum voltage                             Style : WORD
+    Data  : 0000h
+
+    Name  : Maximum voltage                             Style : WORD
+    Data  : 0000h
+
+    Name  : Configured voltage                          Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Technology                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Memory Operating Mode Capability            Style : WORD
+    Data  : 0004h
+            -- Bit.02:Unknown
+
+    Name  : Firmware Version                            Style : BYTE
+    Data  : 06h
+
+    Name  : Module Manufacturer ID                      Style : WORD
+    Data  : 0000h
+
+    Name  : Module Product ID                           Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Manufacturer ID Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Product ID      Style : WORD
+    Data  : 0000h
+
+    Name  : Non-volatile Size                           Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Volatile Size                               Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Cache Size                                  Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Logical Size                                Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Unknown Field                               Style : BYTEs
+    Data  : 00000000
+[Type 018] -- 32-bit Memory Error Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Ah
+
+    Name  : Error Type                                  Style : BYTE
+    Data  : 03h
+            -- OK
+
+    Name  : Error Granularity                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Error Operation                             Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Vendor Syndrome                             Style : DWORD
+    Data  : 00000000h
+
+    Name  : Mem. Array Err. Add.                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Device Error Address                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Error Resolution                            Style : DWORD
+    Data  : 80000000h
+
+[Type 017] -- Memory Device
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 5Ch
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Bh
+
+    Name  : Phys. Mem. Array Handle                     Style : WORD
+    Data  : 000Fh
+
+    Name  : Mem. Err. Info. Handle                      Style : WORD
+    Data  : 001Ah
+
+    Name  : Total Width                                 Style : WORD
+    Data  : 0040h
+
+    Name  : Data Width                                  Style : WORD
+    Data  : 0040h
+
+    Name  : Size                                        Style : WORD
+    Data  : 2000h
+
+    Name  : Form Factor                                 Style : BYTE
+    Data  : 09h
+            -- DIMM
+
+    Name  : Device Set                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device Locator                              Style : STRING
+    Data  : "DIMM 0"
+
+    Name  : Bank Locator                                Style : STRING
+    Data  : "P0 CHANNEL B"
+
+    Name  : Memory Type                                 Style : BYTE
+    Data  : 1Ah
+            -- DDR4
+
+    Name  : Type Detail                                 Style : WORD
+    Data  : 4080h
+            -- Bit.07:Synchronous
+            -- Bit.14:Unbuffered (Unregistered)
+
+    Name  : Speed                                       Style : WORD
+    Data  : 0855h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "Unknown"
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "09759840"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : NULL
+
+    Name  : Part Number                                 Style : STRING
+    Data  : "CMK16GX4M2B3200C16  "
+
+    Name  : Attributes                                  Style : BYTE
+    Data  : 01h
+
+    Name  : Extended Size                               Style : DWORD
+    Data  : 00000000h
+
+    Name  : Configured Memory Speed                     Style : WORD
+    Data  : 0855h
+
+    Name  : Minimum voltage                             Style : WORD
+    Data  : 04B0h
+
+    Name  : Maximum voltage                             Style : WORD
+    Data  : 04B0h
+
+    Name  : Configured voltage                          Style : WORD
+    Data  : 04B0h
+
+    Name  : Memory Technology                           Style : BYTE
+    Data  : 03h
+            -- DRAM
+
+    Name  : Memory Operating Mode Capability            Style : WORD
+    Data  : 0008h
+            -- Bit.03:Volatile memory
+
+    Name  : Firmware Version                            Style : BYTE
+    Data  : 06h
+
+    Name  : Module Manufacturer ID                      Style : WORD
+    Data  : 9E02h
+
+    Name  : Module Product ID                           Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Manufacturer ID Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Product ID      Style : WORD
+    Data  : 0000h
+
+    Name  : Non-volatile Size                           Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Volatile Size                               Style : QWORD
+    Data  : 0000 0002 0000 0000h
+
+    Name  : Cache Size                                  Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Logical Size                                Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Unknown Field                               Style : BYTEs
+    Data  : 00000000
+[Type 020] -- Memory Device Mapped Address
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 23h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Ch
+
+    Name  : Starting Address                            Style : DWORD
+    Data  : 00000000h
+
+    Name  : End Address                                 Style : DWORD
+    Data  : 00FFFFFFh
+
+    Name  : Memory Device Handle                        Style : WORD
+    Data  : 001Bh
+
+    Name  : Mem. Map. Add. Handle                       Style : WORD
+    Data  : 0010h
+
+    Name  : Partition Row Position                      Style : BYTE
+    Data  : FFh
+
+    Name  : Interleave Position                         Style : BYTE
+    Data  : FFh
+
+    Name  : Interleaved Data Depth                      Style : BYTE
+    Data  : FFh
+
+    Name  : Extended Starting Address                   Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Extended Ending Address                     Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+[Type 018] -- 32-bit Memory Error Information
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 17h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Dh
+
+    Name  : Error Type                                  Style : BYTE
+    Data  : 03h
+            -- OK
+
+    Name  : Error Granularity                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Error Operation                             Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Vendor Syndrome                             Style : DWORD
+    Data  : 00000000h
+
+    Name  : Mem. Array Err. Add.                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Device Error Address                        Style : DWORD
+    Data  : 80000000h
+
+    Name  : Error Resolution                            Style : DWORD
+    Data  : 80000000h
+
+[Type 017] -- Memory Device
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 5Ch
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Eh
+
+    Name  : Phys. Mem. Array Handle                     Style : WORD
+    Data  : 000Fh
+
+    Name  : Mem. Err. Info. Handle                      Style : WORD
+    Data  : 001Dh
+
+    Name  : Total Width                                 Style : WORD
+    Data  : FFFFh
+
+    Name  : Data Width                                  Style : WORD
+    Data  : FFFFh
+
+    Name  : Size                                        Style : WORD
+    Data  : 0000h
+
+    Name  : Form Factor                                 Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Device Set                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Device Locator                              Style : STRING
+    Data  : "DIMM 1"
+
+    Name  : Bank Locator                                Style : STRING
+    Data  : "P0 CHANNEL B"
+
+    Name  : Memory Type                                 Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Type Detail                                 Style : WORD
+    Data  : 0004h
+            -- Bit.02:Unknown
+
+    Name  : Speed                                       Style : WORD
+    Data  : 0000h
+
+    Name  : Manufacturer                                Style : STRING
+    Data  : "Unknown"
+
+    Name  : Serial Number                               Style : STRING
+    Data  : "Yzlhabb"
+
+    Name  : Asset Tag                                   Style : STRING
+    Data  : NULL
+
+    Name  : Part Number                                 Style : STRING
+    Data  : "Unknown"
+
+    Name  : Attributes                                  Style : BYTE
+    Data  : 00h
+
+    Name  : Extended Size                               Style : DWORD
+    Data  : 00000000h
+
+    Name  : Configured Memory Speed                     Style : WORD
+    Data  : 0000h
+
+    Name  : Minimum voltage                             Style : WORD
+    Data  : 0000h
+
+    Name  : Maximum voltage                             Style : WORD
+    Data  : 0000h
+
+    Name  : Configured voltage                          Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Technology                           Style : BYTE
+    Data  : 02h
+            -- Unknown
+
+    Name  : Memory Operating Mode Capability            Style : WORD
+    Data  : 0004h
+            -- Bit.02:Unknown
+
+    Name  : Firmware Version                            Style : BYTE
+    Data  : 06h
+
+    Name  : Module Manufacturer ID                      Style : WORD
+    Data  : 0000h
+
+    Name  : Module Product ID                           Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Manufacturer ID Style : WORD
+    Data  : 0000h
+
+    Name  : Memory Subsystem Controller Product ID      Style : WORD
+    Data  : 0000h
+
+    Name  : Non-volatile Size                           Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Volatile Size                               Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Cache Size                                  Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Logical Size                                Style : QWORD
+    Data  : 0000 0000 0000 0000h
+
+    Name  : Unknown Field                               Style : BYTEs
+    Data  : 00000000
+[Type 127] -- End-of-Table
+===============================================================================
+    Name  : Struc. Length                               Style : BYTE
+    Data  : 04h
+
+    Name  : Struc. Handle                               Style : WORD
+    Data  : 001Fh
+
